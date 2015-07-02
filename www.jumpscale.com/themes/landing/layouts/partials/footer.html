@@ -1,0 +1,30 @@
+{{ range $element :=  $.Site.Pages }}
+  {{ if eq .Section "home" }}
+    {{ if eq .Title "footer_box" }}
+      <footer>
+        <div class="pre-footer">
+          <div class="container"> </div>
+        </div>
+        <div class="deep-footer">
+          <div class="container">
+            <div class="row">
+              <div class="span6">
+                <div class="copyright">
+                  <p>{{ .Params.copy_right }}</p>
+                </div>
+              </div>
+              <div class="span6">
+                <ul class='footer-links'>
+                  <li> <a href="/">Home</a> </li>
+                  <li> <a href="#">Documentation</a> </li>
+                  <li> <a href="#">Subscribe</a> </li>
+                  <li> <a href="#">Contact</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  	{{end}}
+  {{end}}
+{{end}}

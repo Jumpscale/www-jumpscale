@@ -1,0 +1,12 @@
+baseurl = "/"
+LanguageCode = "en"
+title = "JumpScale"
+theme = "landing"
+contentdir = "content"
+staticdir = "static"
+publishdir = "site"
+relativeURLs = true
+
+[permalinks]
+    pages = "/:filename"
+    contact-us = "/:filename"

@@ -1,0 +1,100 @@
+{{ range $element :=  $.Site.Pages }}
+  {{ if eq .Section "home" }}
+    {{ if eq .Title "team_services_box" }}
+      <section class='section-wrapper'>
+        <div class="container">
+          <div class="row">
+            <div style="position: relative;" class="span6">
+              <h3 class='section-header'>Meet the team</h3>
+              <div class="testimonials">
+                <div id="owl"class="testimonials-users row hidden-phone owl-carousel">
+                  <div class="item"> <a class='testimonials-user-w active' data-toggle='testimonial' href='#testimonial1'> <span class='testimonials-user'> <img alt="Avatar-1" src="{{ .Params.kristof_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w' data-toggle='testimonial' href='#testimonial2'> <span class='testimonials-user'> <img alt="Avatar-2" src="{{ .Params.rob_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w' data-toggle='testimonial' href='#testimonial3'> <span class='testimonials-user'> <img alt="Avatar-4" src="{{ .Params.jo_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w' data-toggle='testimonial' href='#testimonial4'> <span class='testimonials-user'> <img alt="Avatar-4" src="{{ .Params.reem_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w' data-toggle='testimonial' href='#testimonial5'> <span class='testimonials-user'> <img alt="Avatar-4" src="{{ .Params.karim_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w ' data-toggle='testimonial' href='#testimonial7'> <span class='testimonials-user'> <img alt="Avatar-1" src="{{ .Params.chris_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w' data-toggle='testimonial' href='#testimonial6'> <span class='testimonials-user'> <img alt="Avatar-4" src="{{ .Params.azmy_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w' data-toggle='testimonial' href='#testimonial10'> <span class='testimonials-user'> <img alt="Avatar-4" src="{{ .Params.fady_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w' data-toggle='testimonial' href='#testimonial8'> <span class='testimonials-user'> <img alt="Avatar-2" src="{{ .Params.hamdy_pic }}" /></span> </a> </div>
+                  <div class="item"> <a class='testimonials-user-w' data-toggle='testimonial' href='#testimonial9'> <span class='testimonials-user'> <img alt="Avatar-4" src="{{ .Params.amr_pic }}" /></span> </a> </div>
+                </div>
+                <div class="customNavigation"> <a class="btn prev"><i class="icon-caret-left"></i></a> <a class="btn next"><i class="icon-caret-right"></i></a> </div>
+                <div class="testimonials-speeches">
+                  <div class="testimonials-speech active" id="testimonial1"> <strong>{{ .Params.kristof_fullname }}</strong> {{ .Params.kristof_bio }} </p>
+                    <div class="speech-by"> {{ .Params.kristof_title }} </div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial2">
+                    <p> <strong>{{ .Params.rob_fullname }}</strong> {{ .Params.rob_bio }}</p>
+                    <div class="speech-by"> {{ .Params.rob_title }}</div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial3">
+                    <p> <strong>{{ .Params.jo_fullname }}</strong> {{ .Params.jo_bio }}</p>
+                    <div class="speech-by">{{ .Params.jo_title }}</div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial4">
+                    <p> <strong>{{ .Params.reem_fullname }}</strong> {{ .Params.reem_bio }}</p>
+                    <div class="speech-by"> Sc{{ .Params.reem_title }}</div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial5">
+                    <p> <strong>{{ .Params.karim_fullname }}</strong> {{ .Params.karim_bio }}</p>
+                    <div class="speech-by">{{ .Params.karim_title }}</div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial7">
+                    <p> <strong>{{ .Params.chris_fullname }}</strong> {{ .Params.chris_bio }}</p>
+                    <div class="speech-by">{{ .Params.chris_title }}</div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial6">
+                    <p> <strong>{{ .Params.azmy_fullname }}</strong> {{ .Params.azmy_bio }}</p>
+                    <div class="speech-by">{{ .Params.azmy_title }}</div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial8">
+                    <p> <strong>{{ .Params.fady_fullname }}</strong> {{ .Params.fady_bio }}</p>
+                    <div class="speech-by">{{ .Params.fady_title }}</div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial9">
+                    <p> <strong>{{ .Params.hamdy_fullname }}</strong> {{ .Params.hamdy_bio }}</p>
+                    <div class="speech-by">{{ .Params.hamdy_title }}</div>
+                  </div>
+                  <div class="testimonials-speech" id="testimonial10">
+                    <p> <strong>{{ .Params.amr_fullname }}</strong> {{ .Params.amr_bio }}</p>
+                    <div class="speech-by">{{ .Params.amr_title }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="span6">
+              <h3 class="section-header">{{ .Params.services_heder }}</h3>
+              <div class="accordion" id="accordion">
+                <div class="accordion-group">
+                  <div class="accordion-heading"> <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapse1">{{ .Params.service_block1_title }}</a> </div>
+                  <div class="accordion-body collapse in" id="collapse1">
+                    <div class="accordion-inner">
+                      <p>{{ .Params.service_block1_text }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading"> <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapse2">{{ .Params.service_block2_title }} </a> </div>
+                  <div class="accordion-body collapse" id="collapse2">
+                    <div class="accordion-inner">
+                      <p>{{ .Params.service_block2_text }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading"> <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapse3">{{ .Params.service_block3_title }} </a> </div>
+                  <div class="accordion-body collapse" id="collapse3">
+                    <div class="accordion-inner">
+                      <p>{{ .Params.service_block3_text }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {{end}}
+  {{end}}
+{{end}}

@@ -1,0 +1,30 @@
+{{ range $element :=  $.Site.Pages }}
+  {{ if eq .Section "home" }}
+    {{ if eq .Title "features_box" }}
+      <div class="sub-slider-features">
+        <div class="container">
+          <div class="row">
+            <div class="span4">
+              <div class="info-bullet"> <i class='icon-file'></i>
+                <h5>{{ .Params.block1_title }}</h5>
+                <p>{{ .Params.block1_text }}</p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="info-bullet"> <i class='icon-tags'></i>
+                <h5>{{ .Params.block2_title }}</h5>
+                <p>{{ .Params.block2_text }}</p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="info-bullet"> <i class='icon-cogs'></i>
+                <h5>{{ .Params.block3_title }}</h5>
+                <p>{{ .Params.block3_text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{end}}
+  {{end}}
+{{end}}

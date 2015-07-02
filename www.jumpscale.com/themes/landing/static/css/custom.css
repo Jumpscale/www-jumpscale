@@ -1,0 +1,35 @@
+body {
+padding-bottom:0px !important; 
+
+}
+#homepage-carousel .carousel-control {
+border:none; background:none;
+}
+.navbar-inverse {
+      background: none repeat scroll 0 0 transparent;
+    opacity: 0.5;
+    position: fixed;
+    top: 71px;
+    width: 200px;
+    z-index: 2147483647;
+}
+
+input, textarea, .uneditable-input {
+width:90%;
+}
+
+.addrss {
+padding-top:70px;
+}
+.addrss p
+{
+color: #3D3B36;
+font-weight: bold;
+}
+.testimonials .testimonials-user img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}

@@ -1,0 +1,28 @@
+{{ range $element :=  $.Site.Pages }}
+  {{ if eq .Section "home" }}
+    {{ if eq .Title "intro_slider_box" }}
+      <div class="carousel slide over-something" id="homepage-carousel">
+        <div class="carousel-inner slider-w">
+          <div class="active item">
+            <div class="container">
+              <h1 class='slider-header'>{{ .Params.slide1_title }}</h1>
+              <h2 class='slider-sub-header'>{{ .Params.slide1_text }}</h2>
+              <div class="cta">
+                <p><a href='{{ .Params.slide1_button_link }}' class="btn btn-cta" >{{ .Params.slide1_button_text }}</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container">
+              <h1 class='slider-header'>{{ .Params.slide2_title }}</h1>
+              <h2 class='slider-sub-header'>{{ .Params.slide2_text }}</h2>
+              <div class="cta">
+                <p><a href='{{ .Params.slide2_button_link }}' class="btn btn-cta">{{ .Params.slide2_button_text }}</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class='carousel-control left' data-slide='prev' href='#homepage-carousel'> <i class='icon-chevron-left'></i> </a> <a class='carousel-control right' data-slide='next' href='#homepage-carousel'> <i class='icon-chevron-right'></i> </a> </div>
+    {{end}}
+  {{end}}
+{{end}}
