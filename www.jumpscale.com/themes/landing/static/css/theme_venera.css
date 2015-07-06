@@ -7881,7 +7881,7 @@ form.bs-docs-example {
   .bs-docs-sidenav > li > a {
     width: 190px \9;
     /* Override the previous IE8-9 hack */
-  
+
   }
 }
 /* Desktop
@@ -10038,7 +10038,7 @@ table.no-margin {
   }
 }
 @media (min-width: 980px) {
-  
+
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {

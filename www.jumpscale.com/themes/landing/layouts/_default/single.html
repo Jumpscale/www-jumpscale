@@ -1,41 +1,33 @@
 {{ partial "head.html" . }}
-<link rel="shortcut icon" href="../images/favicon.ico">
-<body class="collapsing_header">
+<body >
 {{ partial "header.html" . }}
-{{ if .Params.cover_image }}
-	<div class="full_page_photo" style="background-image: url({{ .Params.cover_image }});">
-	     <div class="container">
-	          <section class="call_to_action">
-	               <h3 class="animated bounceInDown">{{ .Params.cover_image_message }}</h3>
-	          </section>
-	     </div>
-	</div>
-{{ end }}
-<div class="main">
-     {{ partial "breadcrumb.html" . }}
-     <section class="article-text">
-     <div class="container">
-          <div class="row">
-               <div class="col-sm-12 col-md-12">
-                    <p>{{ .Content }}</p>
-               </div>
-          </div>
-     </div>
-     </section>
-		{{ partial "footer.html" . }}
+
+<div class="container docs-w">
+  <div class="row">
+    <div class="span3 bs-docs-sidebar">
+      <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200">
+				{{ range $element := where .Site.Pages "Section" "pages" }}
+					{{ if ne .RelPermalink "/thanks"}}
+	        	<li class=""><a href="{{ $element.RelPermalink }}"><i class="icon-chevron-right"></i> {{ $element.Title }}</a></li>
+					{{ end }}
+				{{ end }}
+      </ul>
+    </div>
+    <div class="span9 single-content">
+      <section id="thankyou">
+        <div class="page-header">
+          <h1>{{ .Title }}</h1>
+        </div>
+        {{ .Content }}
+      </section>
+    </div>
+  </div>
 </div>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
-<script src="/twitter-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/js/modernizr.custom.48287.js"></script>
-<script src="/js/woothemes-FlexSlider-06b12f8/jquery.flexslider-min.js"></script>
-<script src="/js/prettyPhoto_3.1.5/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-<script src="/js/isotope/jquery.isotope.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/js/jquery.ui.totop.js"></script>
-<script type="text/javascript" src="/js/easing.js"></script>
-<script type="text/javascript" src="/js/wow.min.js"></script>
-<script type="text/javascript" src="/js/snap.svg-min.js"></script>
-<script type="text/javascript" src="/js/restart_theme.js"></script>
-<script type="text/javascript" src="/js/collapser.js"></script>
+{{ partial "footer.html" . }}
+<!--  <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>-->
+<script src="/js/bootstrap.js" type="text/javascript"></script>
+<script src="/js/prettify.js" type="text/javascript"></script>
+<script src="/js/lightbox.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
 </body>
 </html>
