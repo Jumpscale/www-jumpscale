@@ -33,3 +33,26 @@ font-weight: bold;
   width: 65px;
   height: 65px;
 }
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 142px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 142px;
+  background-color: #f5f5f5;
+}
+
+
