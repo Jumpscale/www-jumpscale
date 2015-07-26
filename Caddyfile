@@ -1,12 +1,19 @@
-http://new-jumpscale.aydo.com:8099 {
+http://www.jumpscale.com, http://jumpscale.com {
     bind 0.0.0.0
+    redir https://www.jumpscale.com
+}
+
+https://www.jumpscale.com {
+    bind 0.0.0.0
+    tls ../certs/ovs.com.crt.pem ../certs/ovs.com.key.pem
     gzip
     root www.jumpscale.com/site
     git {
-       repo git@git.aydo.com:static-websites/www-jumpscale.git
-       interval 300
-       key ../keys/id_rsa
-       path ../..
-       then hugo -s www.jumpscale.com
+        repo git@git.aydo.com:ovs/www-ovs.git
+        branch production
+        interval 300
+        key ../keys/id_rsa
+        path ../..
+        then hugo -s www.jumpscale.com
     }
 }
