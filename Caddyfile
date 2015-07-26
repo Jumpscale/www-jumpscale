@@ -9,7 +9,7 @@ https://www.jumpscale.com {
     gzip
     root www.jumpscale.com/site
     git {
-        repo git@git.aydo.com:ovs/www-ovs.git
+        repo git@git.aydo.com:static-websites/www-jumpscale.git
         branch production
         interval 300
         key ../keys/id_rsa
