@@ -11,6 +11,17 @@
 	        	<li class=""><a href="{{ $element.RelPermalink }}"><i class="icon-chevron-right"></i> {{ $element.Title }}</a></li>
 					{{ end }}
 				{{ end }}
+        {{ $currentLink := .RelPermalink }}
+        {{ range $element := where .Site.Pages "Section" "documentation" }}
+          {{if eq .Title "_Sidebar" }}
+            {{ $withoutSidebar := replace .RelPermalink "_Sidebar/" "" }}
+            {{ $filterCurrentLink := replace $currentLink $withoutSidebar "" }}
+            {{ $currentItemInLoopLink := $filterCurrentLink | printf "%s%s" $withoutSidebar }}
+            {{if eq $currentItemInLoopLink  $currentLink}}
+              {{.Content}}
+            {{end}}
+          {{end}}
+        {{ end }}
       </ul>
     </div>
     <div class="span9 single-content">

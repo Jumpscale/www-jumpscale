@@ -7778,14 +7778,21 @@ form.bs-docs-example {
   font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .bs-docs-sidenav li a {
-  padding: 7px 15px;
+  /*padding: 7px 15px;*/
+  padding: 0 5px;
   text-shadow: none;
   font-size: 18px;
+  margin-bottom: 5px;
+}
+.bs-docs-sidenav ul{
+  list-style: inherit;
+  margin-left: 6px;
 }
 .bs-docs-sidenav li a:hover {
   background-color: #7accc9;
   color: #fff;
   text-shadow: none;
+  text-decoration: none;
 }
 .bs-docs-sidenav li.active a {
   background-color: #7accc9;
