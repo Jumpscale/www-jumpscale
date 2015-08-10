@@ -126,7 +126,7 @@ textarea {
   vertical-align: top;
 }
 .single-content a{
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 @media print {
   * {
@@ -208,7 +208,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
@@ -552,7 +552,7 @@ a:focus {
 }
 p {
   margin: 0 0 10px;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .lead {
   margin-bottom: 20px;
@@ -903,13 +903,13 @@ input,
 button,
 select,
 textarea {
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
   display: block;
   margin-bottom: 5px;
   font-size: 16px;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 select,
 textarea,
@@ -3230,7 +3230,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: 0px 1px 4px 1px #a4c7df, 2px 2px 1px 0px #ffffff inset;
   -moz-box-shadow: 0px 1px 4px 1px #a4c7df, 2px 2px 1px 0px #ffffff inset;
   box-shadow: 0px 1px 4px 1px #a4c7df, 2px 2px 1px 0px #ffffff inset;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5f6a67;
 }
 .tabs-below > .nav-tabs,
@@ -4743,7 +4743,7 @@ a.badge:focus {
   margin-bottom: 1px;
   border-bottom: 1px solid #d0d3c2;
   color: #4F4E4C;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
 }
@@ -7775,7 +7775,7 @@ form.bs-docs-example {
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2);
   padding: 20px 15px;
   width: 180px;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .bs-docs-sidenav li a {
   /*padding: 7px 15px;*/
@@ -8490,7 +8490,7 @@ li.L9 {
   margin-left: 5px;
 }
 .single-post-w .post-content {
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -8699,7 +8699,7 @@ li.L9 {
 .post-author-w .post-author-bio-w {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .post-author-w .post-author-bio-w .post-author-name {
   font-size: 18px;
@@ -8794,7 +8794,7 @@ li.L9 {
   -moz-box-shadow: 1px 1px 4px 1px #cadeec;
   box-shadow: 1px 1px 4px 1px #cadeec;
   position: relative;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Add an tip poiting to comment author */
 
 }
@@ -8933,7 +8933,7 @@ li.L9 {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #fff;
   text-shadow: 2px 2px 0px #58807d;
   margin: 0px;
@@ -9101,7 +9101,7 @@ li.L9 {
   text-decoration: none;
   font-size: 22px;
   font-weight: 700;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-shadow: 2px 2px 0px #5f6359;
   margin-bottom: 5px;
   padding-bottom: 10px;
@@ -9245,7 +9245,7 @@ li.L9 {
   color: #4f4e4c;
   font-size: 15px;
   line-height: 20px;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .white-card .welled {
   background-color: #edeee7;
@@ -9469,7 +9469,7 @@ form.no-margin-bottom {
   font-size: 17px;
   line-height: 24px;
   color: #005f6b;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .testimonials .testimonials-speech p {
   border-bottom: 1px solid #d8dacf;
@@ -10133,7 +10133,7 @@ table.no-margin {
   -webkit-box-shadow: 1px 1px 4px 1px #cadeec;
   -moz-box-shadow: 1px 1px 4px 1px #cadeec;
   box-shadow: 1px 1px 4px 1px #cadeec;
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Add an tip poiting to comment author */
 
 }
