@@ -211,7 +211,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
-  font-weight: 300;
+  
   color: #005f6b;
   background-color: #ddeaf3;
   padding-top: 72px;
@@ -645,10 +645,10 @@ h3 {
   line-height: 40px;
 }
 h1 {
-  font-size: 41.25px;
+  font-size: 28px;
 }
 h2 {
-  font-size: 33.75px;
+  font-size: 22.75px;
 }
 h3 {
   font-size: 26.25px;
@@ -896,7 +896,7 @@ button,
 select,
 textarea {
   font-size: 15px;
-  font-weight: 300;
+  
   line-height: 20px;
 }
 input,
@@ -939,7 +939,7 @@ input[type="color"],
   -moz-border-radius: 0px;
   border-radius: 0px;
   vertical-align: middle;
-  font-weight: 300;
+  
 }
 input,
 textarea,
@@ -4725,7 +4725,7 @@ a.badge:focus {
   color: #005f6b;
   font-size: 18px;
   text-shadow: -1px 0px 0px #ffffff;
-  font-weight: 300;
+  
   border-bottom: 1px solid #aacce3;
   margin-bottom: 2px;
 }
@@ -7779,10 +7779,11 @@ form.bs-docs-example {
 }
 .bs-docs-sidenav li a {
   /*padding: 7px 15px;*/
-  padding: 0 5px;
+  padding: -1 5px;
   text-shadow: none;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 5px;
+
 }
 .bs-docs-sidenav ul{
   list-style: inherit;
@@ -8293,7 +8294,7 @@ li.L9 {
 #top-navigation > ul.nav > li > a {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 300;
+  
   font-size: 18px;
 }
 /* Accont control links on top right corder, next to top navigation */
@@ -8950,7 +8951,7 @@ li.L9 {
 /* Slider sub header styles */
 .slider-sub-header {
   color: #bdd3d2;
-  font-weight: 300;
+  
   margin-bottom: 20px;
   font-size: 24px;
   margin-top: 0px;
@@ -9014,7 +9015,7 @@ li.L9 {
   font-size: 24px;
   text-decoration: none;
   text-align: center;
-  font-weight: 300;
+  
   border: none;
   -webkit-box-shadow: 0px 0px 6px 1px #517875, 0px 2px 3px 1px #fff inset;
   -moz-box-shadow: 0px 0px 6px 1px #517875, 0px 2px 3px 1px #fff inset;
@@ -9112,7 +9113,7 @@ li.L9 {
   line-height: 22px;
   color: #b8bbb3;
   text-transform: none;
-  font-weight: 300;
+  
 }
 .just-stripped {
   background: transparent url('../images/stripped-bg.png') left top repeat;
