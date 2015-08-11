@@ -126,7 +126,7 @@ textarea {
   vertical-align: top;
 }
 .single-content a{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media print {
   * {
@@ -208,7 +208,8 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   font-size: 15px;
   line-height: 20px;
   
@@ -552,7 +553,7 @@ a:focus {
 }
 p {
   margin: 0 0 10px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .lead {
   margin-bottom: 20px;
@@ -903,13 +904,13 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
   display: block;
   margin-bottom: 5px;
   font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 select,
 textarea,
@@ -3230,7 +3231,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: 0px 1px 4px 1px #a4c7df, 2px 2px 1px 0px #ffffff inset;
   -moz-box-shadow: 0px 1px 4px 1px #a4c7df, 2px 2px 1px 0px #ffffff inset;
   box-shadow: 0px 1px 4px 1px #a4c7df, 2px 2px 1px 0px #ffffff inset;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5f6a67;
 }
 .tabs-below > .nav-tabs,
@@ -3462,7 +3463,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -4743,7 +4744,7 @@ a.badge:focus {
   margin-bottom: 1px;
   border-bottom: 1px solid #d0d3c2;
   color: #4F4E4C;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
 }
@@ -7775,7 +7776,7 @@ form.bs-docs-example {
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2);
   padding: 20px 15px;
   width: 180px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .bs-docs-sidenav li a {
   /*padding: 7px 15px;*/
@@ -8491,7 +8492,7 @@ li.L9 {
   margin-left: 5px;
 }
 .single-post-w .post-content {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -8700,7 +8701,7 @@ li.L9 {
 .post-author-w .post-author-bio-w {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .post-author-w .post-author-bio-w .post-author-name {
   font-size: 18px;
@@ -8795,7 +8796,7 @@ li.L9 {
   -moz-box-shadow: 1px 1px 4px 1px #cadeec;
   box-shadow: 1px 1px 4px 1px #cadeec;
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Add an tip poiting to comment author */
 
 }
@@ -8934,8 +8935,8 @@ li.L9 {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  /*text-transform: uppercase;*/
-  color: #fff;
+text-transform: uppercase;  
+color: #fff;
   text-shadow: 2px 2px 0px #58807d;
   margin: 0px;
   margin-bottom: 10px;
@@ -9102,7 +9103,7 @@ li.L9 {
   text-decoration: none;
   font-size: 22px;
   font-weight: 700;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;  
   text-shadow: 2px 2px 0px #5f6359;
   margin-bottom: 5px;
   padding-bottom: 10px;
@@ -9246,7 +9247,7 @@ li.L9 {
   color: #4f4e4c;
   font-size: 15px;
   line-height: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .white-card .welled {
   background-color: #edeee7;
@@ -9470,7 +9471,7 @@ form.no-margin-bottom {
   font-size: 17px;
   line-height: 24px;
   color: #005f6b;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .testimonials .testimonials-speech p {
   border-bottom: 1px solid #d8dacf;
@@ -10134,7 +10135,7 @@ table.no-margin {
   -webkit-box-shadow: 1px 1px 4px 1px #cadeec;
   -moz-box-shadow: 1px 1px 4px 1px #cadeec;
   box-shadow: 1px 1px 4px 1px #cadeec;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Add an tip poiting to comment author */
 
 }
@@ -11308,3 +11309,8 @@ table.no-margin {
     overflow: visible !important;
   }
 }
+
+#thankyou, #thankyou p, #thankyou a { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; color: #545454;}
+#thankyou a { color: #005F6B;}
+#thankyou h1, #thankyou h2 { font-size: 22px;}
+#contact { font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; }
