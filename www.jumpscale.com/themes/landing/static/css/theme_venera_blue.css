@@ -11310,5 +11310,7 @@ table.no-margin {
   }
 }
 
-#thankyou { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px;}
+#thankyou, #thankyou p, #thankyou a { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; color: #545454;}
+#thankyou a { color: #005F6B;}
+#thankyou h1, #thankyou h2 { font-size: 22px;}
 #contact { font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; }
