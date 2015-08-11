@@ -8,6 +8,7 @@ slide1_button_text = "Documentation"
 slide1_button_link = "/documentation/Home"
 
 
+
 slide2_title = "JumpScale is Open Source and It's available to installation now."
 slide2_text = "Deliver more powerfull software for multiple purposes in 1/10th of the time compared to traditional development."
 slide2_button_text = "Install"
