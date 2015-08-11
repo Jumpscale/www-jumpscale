@@ -11309,3 +11309,6 @@ table.no-margin {
     overflow: visible !important;
   }
 }
+
+#thankyou { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px;}
+#contact { font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; }
