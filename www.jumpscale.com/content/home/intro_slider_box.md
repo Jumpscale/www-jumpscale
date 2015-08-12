@@ -5,7 +5,7 @@ title = "intro_slider_box"
 slide1_title = "Welcome to JumpScale, the revolutionary new cloud automation system."
 slide1_text = "JumpScale changes the way of writing software entirely thanks to an entire new way of automating software design."
 slide1_button_text = "Documentation"
-slide1_button_link = "/documentation/Home"
+slide1_button_link = "/documentation"
 
 
 
