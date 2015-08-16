@@ -3,25 +3,89 @@
           position: relative;
           height: 77%;
         }
-        #iframe2 {
-            width: 1180px;
-            overflow: hidden; 
-            position: absolute;
-            height: 108%;
-            top: 78px;
-
+        
+        .docButton {
+           padding: 10px 17px !important;
+           font-size: 20px !important;
+           margin: 20px 0;
         }
-        @media (max-width: 1200px) {
-           #iframe2 {
-            width: 934px;
-            top: 78px;
-          }
+        
+        .divWrap {
+          display: inline-block;
+          margin: 70px 50px;
+        }      
+        .divWrap .dropdown-menu {
+        left: 39px;
+        }
+        .bigger { 
+          font-size: 56px;
+          color: #FFF;
         }
 </style>
 {{ partial "head.html" . }}
 <body style="overflow: hidden;">
 {{ partial "header.html" . }}
+{{if ne .Title "Documentation"}}
+    <div class="span9 single-content">
+      <section id="thankyou">
+        <div class="page-header">
+          <h1>{{ .Title }}</h1>
+        </div>
+        {{ .Content }}
+      </section>
+    </div>
+      {{else}}
+      <div style="height: 100%;" class="carousel-inner slider-w">
+        <div class="divWrap">
+         <i class="icon-book bigger"></i><br>
+          <button onclick="location.href='https://www.gitbook.com/book/despiegk/jumpscale/details';" type="button" class="btn btn-default docButton" aria-label="Left Align">
+            <span class="glyphicon glyphicon-align-left" aria-hidden="true">Jumpscale Documentation</span>
+          </button>
+          <br/>
+          <div class="dropdown">
+          <button class="btn btn-default btn-lg dropdown-toggle  docButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Download Menu <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="https://www.gitbook.com/download/pdf/book/despiegk/jumpscale">Download PDF</a>
+          </li>
+          <li>
+              <a href="https://www.gitbook.com/download/epub/book/despiegk/jumpscale">Download EPUB</a>
+          </li>
+          <li>
+              <a href="https://www.gitbook.com/download/mobi/book/despiegk/jumpscale">Download MOBI</a>
+          </li>
+          </ul>
+          </div> 
+      </div>
 
+        <div class="divWrap">
+        <i class="icon-code bigger"></i><br>
+            <button onclick="location.href='https://www.gitbook.com/book/despiegk/jumpscaleapi/details';" type="button" class="btn btn-default docButton" aria-label="Left Align">
+              <span class="glyphicon glyphicon-align-left" aria-hidden="true">Jumpscale API Documentation</span>
+            </button>
+            <br/>
+            <div class="dropdown">
+          <button class="btn btn-default btn-lg dropdown-toggle  docButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Download Menu <span class="caret"></span>
+          </button>
+          <ul style="left: 56px;" class="dropdown-menu">
+            <li>
+              <a href="https://www.gitbook.com/download/pdf/book/despiegk/jumpscaleapi">Download PDF</a>
+          </li>
+          <li>
+              <a href="https://www.gitbook.com/download/epub/book/despiegk/jumpscaleapi">Download EPUB</a>
+          </li>
+          <li>
+              <a href="https://www.gitbook.com/download/mobi/book/despiegk/jumpscaleapi">Download MOBI</a>
+          </li>
+          </ul>
+          </div> 
+        
+      </div>
+      {{ partial "footer.html" . }}
+      {{end}}
 <div class="container docs-w">
   <div class="row">
     {{if ne .Title "Documentation"}}
@@ -46,20 +110,9 @@
       </ul>
     </div>
     {{end}}
-      {{if ne .Title "Documentation"}}
-    <div class="span9 single-content">
-      <section id="thankyou">
-        <div class="page-header">
-          <h1>{{ .Title }}</h1>
-        </div>
-        {{ .Content }}
-      </section>
-    </div>
-      {{else}}
-      <iframe id='iframe2' src="http://despiegk.gitbooks.io/jumpscale/content/" frameborder="0"></iframe>
-      {{end}}
   </div>
 </div>
+
 <!--  <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>-->
 <script src="/js/bootstrap.js" type="text/javascript"></script>
 <script src="/js/prettify.js" type="text/javascript"></script>
