@@ -1,12 +1,13 @@
-http://new-jumpscale.aydo.com:8099 {
+http://www.jumpscale.com:82 {
     bind 0.0.0.0
     gzip
     root www.jumpscale.com/site
     git {
-       repo git@git.aydo.com:static-websites/www-jumpscale.git
-       interval 300
-       key ../keys/id_rsa
-       path ../..
-       then hugo -s www.jumpscale.com
+        repo git@github.com:Jumpscale/www-jumpscale.git
+        branch production
+        interval 300
+        key ../keys/id_rsa
+        path ../..
+        then hugo -s www.jumpscale.com
     }
 }
