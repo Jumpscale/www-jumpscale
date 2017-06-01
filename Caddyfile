@@ -1,4 +1,4 @@
-http://www.jumpscale.com:82 {
+http://www.jumpscale.com:82, http://jumpscale.com:82 {
     bind 0.0.0.0
     gzip
     root www.jumpscale.com/site
